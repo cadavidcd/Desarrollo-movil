@@ -13,13 +13,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="427dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -125,7 +126,7 @@
                 android:text="N" />
 
             <Button
-                android:id="@+id/buttonNN"
+                android:id="@+id/buttonÑ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -220,131 +221,49 @@
 
     <ImageView
         android:id="@+id/water"
-        android:layout_width="327dp"
-        android:layout_height="290dp"
-        android:layout_marginBottom="35dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="155dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="140dp"
         android:src="@drawable/ic_android_black_24dp"
-        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.692" />
 
     <TextView
         android:id="@+id/tablet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="69dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginStart="151dp"
         android:layout_marginTop="70dp"
         android:text="__________"
-        android:textAppearance="@android:style/TextAppearance"
-        android:visibility="invisible"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/water"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
         android:id="@+id/LabelTries"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="262dp"
         android:layout_marginTop="16dp"
-        android:text="Intentos"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/water"
+        android:text="Aciertos"
+        app:layout_constraintBottom_toTopOf="@+id/tablet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tablet"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/LabelFails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Fallas"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/water"
-        app:layout_constraintEnd_toStartOf="@+id/tablet"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/fails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="0"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/water"
-        app:layout_constraintStart_toEndOf="@+id/LabelFails"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:text="0"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/water"
-        app:layout_constraintEnd_toStartOf="@+id/LabelTries"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btnNewGameMedium"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="168dp"
-        android:onClick="doGame"
-        android:src="@android:drawable/btn_minus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
-
-    <ImageButton
-        android:id="@+id/btnNewGameHard"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="20dp"
-        android:onClick="doGame"
-        android:src="@android:drawable/btn_radio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnNewGameMedium"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
-
-    <ImageButton
-        android:id="@+id/btnNewGameEasy"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="8dp"
-        android:onClick="doGame"
-        android:src="@android:drawable/btn_plus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnNewGameMedium"
-        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
